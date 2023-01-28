@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+/* header */
+
+.header__container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone{
+    padding: 12px 16px;
+
+    background: rgba(255, 255, 255, 0.7);
+    border: 4px dashed #354653;
+    border-radius: 10px;
+}
+.number{
+    color: #00040F;
+    text-decoration:none;
+}
+/* promo */
+
+.promo{
+    margin-top: -141px;
+
+    background: url(../img/promo_bg.png) no-repeat;
+    padding-bottom: 306px;
+}
+
+.promo__tittle{
+    padding-top: 231px;
+
+    max-width: 1071px;
+    width: 100%;
+    color: white;
+    font-size: 70px;
+    line-height: 85px;
+}
+.promo__tittle:last-child{
+    padding-top: 0;
+}
+.promo__mini-tittle{
+    margin-top: 40px;
+
+    max-width: 727px;
+    width: 100%;
+}
+
+/* info */
+
+.info__container{
+    padding-top: 90px;
+}
+
+.info__tittle{
+    margin-bottom: 75px;
+
+    text-align: center;
+    font-size: 70px;
+    line-height: 85px;
+    color: #354653;
+}
+
+.info__txt{
+    margin-bottom: 84px;
+
+    font-size: 17px;
+    line-height: 44px;
+    text-align: center;
+    color: #202020;
+}
+
+.info__pics{
+    margin-bottom: 100px;
+}
+
+/* extra */
+.extra{
+    
+    padding-bottom: 42px;
+    padding-top: 65px;
+    background: linear-gradient(0deg, rgba(46, 67, 82, 0.8), rgba(46, 67, 82, 0.8)), url(../img/extra__bg.png) no-repeat;
+}
+
+.extra__tittle{
+    margin-bottom: 65px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+}
+.sliders{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.8);
+    border: 7px dashed #354653;
+    border-radius: 30px;
+}
+
+.card__tittle{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #202020;
+}
+.card__txt{
+    max-width: 394px;
+    width: 100%;
+
+    font-size: 12px;
+    line-height: 37px;
+    text-align: justify;
+    color: #202020;
+}
+
+.card__active{
+    padding-top: 45px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card__not-active{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card__img-not__active{
+    max-width: 300px;
+}
+.card__tittle-not__active{
+    font-size: 15px;
+}
+.card__txt-not__active{
+    max-width: 307px;
+    width: 100%;
+    font-size: 7px;
+}
+
+.extra__button{
+    margin: 0 auto;
+    display: block;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+    padding: 22px 54px;
+    margin-top: 65px;
+    
+
+    background: rgba(46, 67, 82, 0.8);
+    border: 4px dashed #FFFFFF;
+    border-radius: 10px;
+}
+
+/* stocs */
+.stocs__tittle{
+    color: #354653;
+    margin-top: 80px;
+}
+.stocs__container{
+    max-width: 1257px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 145px;
+}
+.stocs__card{
+    border-radius: 37px;
+    box-shadow: inset 0px -124px 30px rgba(46, 67, 82, 0.8);
+    transition: 1s;
+}
+.stocs__half-price{
+    background: url(../img/stocs/1.png);
+    width: 602px;
+    height: 451px;
+}
+.stocs__interior{
+    background: url(../img/stocs/2.png);
+    width: 602px;
+    height: 451px;
+}
+.stocs__guarantee{
+    margin-top: 45px;
+    background: url(../img/stocs/3.png);
+    width: 699px;
+    height: 451px;
+}
+.stocs__autopilot{
+    margin-top: 45px;
+    background: url(../img/stocs/4.png);
+    width: 514px;
+    height: 451px;
+}
+
+.stocs__txt{
+    margin-top: 378px;
+    margin-left: 44px;
+
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #FFFFFF;
+
+    transition: 1s;
+}
+
+.stocs__card:hover .stocs__txt{
+    margin-top: 45px;
+}
+
+.stocs__card:hover{
+    box-shadow: inset 0px -493px 30px rgba(46, 67, 82, 0.8);
+}
