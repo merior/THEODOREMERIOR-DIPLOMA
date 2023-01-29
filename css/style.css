@@ -7,6 +7,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    /* background: rgb(99,115,113); */
+}
+@font-face {
+	font-family: 'font'; 
+	src: url(../txt/18013.otf); 
 }
 
 .container{
@@ -15,6 +20,15 @@ body{
     margin: auto;
 }
 
+.tittle{
+    font-family: 'font'; 
+
+    font-size: 50px;
+    line-height: 85px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
 /* header */
 
 .header__container{
@@ -29,25 +43,30 @@ body{
 .phone{
     padding: 12px 16px;
 
-    background: rgba(255, 255, 255, 0.7);
-    border: 4px dashed #354653;
-    border-radius: 10px;
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 183px;
 }
 .number{
-    color: #00040F;
+    color: #FFFFFF;
     text-decoration:none;
 }
 /* promo */
 
 .promo{
-    margin-top: -141px;
+    margin-top: -210px;
 
-    background: url(../img/promo_bg.png) no-repeat;
-    padding-bottom: 306px;
+    background: url(../img/Ford_F150_2008_00019.jpg) no-repeat 100%;
+    /* background: rgb(99,115,113); */
+
 }
 
 .promo__tittle{
+    font-family: 'font'; 
+
     padding-top: 231px;
+    padding-bottom: 296px;
 
     max-width: 1071px;
     width: 100%;
@@ -55,27 +74,18 @@ body{
     font-size: 70px;
     line-height: 85px;
 }
-.promo__tittle:last-child{
-    padding-top: 0;
-}
-.promo__mini-tittle{
-    margin-top: 40px;
 
-    max-width: 727px;
-    width: 100%;
-}
 
 /* info */
 
-.info__container{
+/* .info__container{
     padding-top: 90px;
-}
+} */
 
 .info__tittle{
     margin-bottom: 75px;
 
     text-align: center;
-    font-size: 70px;
     line-height: 85px;
     color: #354653;
 }
@@ -94,7 +104,7 @@ body{
 }
 
 /* extra */
-.extra{
+/* .extra{
     
     padding-bottom: 42px;
     padding-top: 65px;
@@ -185,8 +195,68 @@ body{
     background: rgba(46, 67, 82, 0.8);
     border: 4px dashed #FFFFFF;
     border-radius: 10px;
-}
+} */
 
+.slide-first{
+    background: url(../img/cars/UGC_Carousel-Gardner_Nichols-desktop.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px -124px 30px rgba(0, 0, 0, 0.8);
+}
+.slide-second{
+    background: url(../img/cars/Homepage-Carousel-R1S-desktop.webp) no-repeat center;
+    background-size: cover;
+}
+.slide-thrith{
+    background: url(../img/cars/cover-1668637230.webp) no-repeat center;
+    background-size: cover;
+}
+.extra__tittle{
+    font-family: 'font'; 
+    font-size: 50px;
+    line-height: 85px;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-bottom: 649px;
+    margin-top: 60px;
+}
+.name-and-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.extra__name{
+    margin-bottom: 30px;
+    font-family: 'font'; 
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+}
+.extra__button{
+
+    font-family: 'font'; 
+    color: white;
+    font-size: 26px;
+    
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 183px;
+}
+/* .extra__button:hover{
+    mix-blend-mode: multiply;
+    background: white;
+} */
+
+.not-active{
+    display: none;
+}
 /* stocs */
 .stocs__tittle{
     color: #354653;
@@ -202,35 +272,44 @@ body{
     margin-bottom: 145px;
 }
 .stocs__card{
-    border-radius: 37px;
-    box-shadow: inset 0px -124px 30px rgba(46, 67, 82, 0.8);
+    /* border-radius: 37px; */
+    box-shadow: inset 0px -124px 30px rgba(0, 0, 0, 0.8);
     transition: 1s;
 }
+.stocs-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .stocs__half-price{
-    background: url(../img/stocs/1.png);
+    background: url(../img/stocs/1x._cut-photo.ru.webp);
+    background-size: cover;
     width: 602px;
     height: 451px;
 }
 .stocs__interior{
-    background: url(../img/stocs/2.png);
+    background: url(../img/stocs/original.webp);
+    background-size: cover;
     width: 602px;
     height: 451px;
 }
 .stocs__guarantee{
     margin-top: 45px;
-    background: url(../img/stocs/3.png);
-    width: 699px;
-    height: 451px;
+    background: url(../img/stocs/cover-1669947094.webp);
+    background-size: cover;
+    width: 602px;
+    height: 947px;
 }
-.stocs__autopilot{
+/* .stocs__autopilot{
     margin-top: 45px;
     background: url(../img/stocs/4.png);
     width: 514px;
     height: 451px;
-}
+} */
 
 .stocs__txt{
-    margin-top: 378px;
+    
     margin-left: 44px;
 
     font-weight: 700;
@@ -241,10 +320,53 @@ body{
     transition: 1s;
 }
 
-.stocs__card:hover .stocs__txt{
+/* .stocs__card:hover .stocs__txt{
     margin-top: 45px;
 }
 
 .stocs__card:hover{
-    box-shadow: inset 0px -493px 30px rgba(46, 67, 82, 0.8);
+    box-shadow: inset 0px -493px 30px rgba(0, 0, 0, 0.8);
+} */
+
+/* line
+
+.dots-line{
+    max-width: 1440px;
+    width: 100%;
+    border: 5px dashed #354653;
+}
+
+/* reviews */
+
+/* .reviews__tittle{
+    color: #354653;
+    margin-top: 80px;
+} */
+
+/* map */
+
+.map{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url(../img/map__bg.png); */
+    background: rgb(99,115,113);
+}
+.map__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map__tittle{
+    max-width: 757px;
+    width: 100%;
+}
+.map__link{
+    padding-top: 70px;
+}
+.map__txt{
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
