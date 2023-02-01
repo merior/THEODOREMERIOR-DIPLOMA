@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
     <title>THEODOREMERIOR</title>
 </head>
 <body>
@@ -24,6 +25,7 @@
     <section class="promo">
         <div class="container">
             <h1 class="promo__tittle">Самое время увидеть красоты нашей страны!</h1>
+            <button class="promo__button">КАТАЛОГ</button>
         </div>
     </section>
     <section class="info">
@@ -48,26 +50,8 @@
     </section>
     <section class="extra">
         <div class="sliders">
-            <div class="slide-first not-active">
-                <h2 class="tittle extra__tittle">ТОП ПРОДАЖ</h2>
-                <div class="extra__about">
-
-                </div>
-                
-                <div class="name-and-buttons ">
-                    <p class="extra__name">НАЗВАНИЕ</p>
-                    <div class="buttons">
-                        <button class="button extra__button">ИНФОРМАЦИЯ</button>
-                        <button class="button extra__button">КАТАЛОГ</button>
-                    </div>
-                </div>
-            </div>
             <div class="slide-first slide-second not-active">
                 <h2 class="tittle extra__tittle">ТОП ПРОДАЖ</h2>
-                <div class="extra__about">
-
-                </div>
-                
                 <div class="name-and-buttons">
                     <p class="extra__name">НАЗВАНИЕ</p>
                     <div class="buttons">
@@ -78,10 +62,6 @@
             </div>
             <div class="slide-first slide-thrith ">
                 <h2 class="tittle extra__tittle">ТОП ПРОДАЖ</h2>
-                <div class="extra__about">
-
-                </div>
-                
                 <div class="name-and-buttons">
                     <p class="extra__name">НАЗВАНИЕ</p>
                     <div class="buttons">
@@ -89,6 +69,14 @@
                         <button class="button extra__button">КАТАЛОГ</button>
                     </div>
                 </div>
+            </div>
+            <div class="sliders__btn">
+                <a href="#" class="left">
+                    <img src="img/arrow-right.svg" alt="" class="btn__left">
+                </a>
+                <a href="#" class="right">
+                    <img src="img/arrow-right.svg" alt="" class="btn__right">
+                </a>
             </div>
         </div>
     </section>
@@ -129,19 +117,40 @@
     </section>
     <section class="form">
         <div class="container form__container">
-            <h2 class="tittle form__tittle">Остались вопросы?
-            </h2>
-            <form action="#" class="form__form">
-                <input type="name" class="name" placeholder="Как к вам обращаться?">
-                <div class="form__name">
-                    <input type="name" class="name" placeholder="Почта">
-                    <input type="email" class="name" placeholder="Номер">
-                </div>
-                <textarea class="about" placeholder="Уточните вопросы"></textarea>
-                <!-- <input type="text" class="about" placeholder="Расскажите о себе"> -->
-                <input type="button" value="Отправить" class="form__btn">
-            </form>
+            <div class="form__div">
+                <h2 class="form__tittle">Остались вопросы?</h2>
+                <form action="#" class="form__form">
+                    <div class="label">
+                        <label for="name" class="label__name">Имя:</label>
+                        <input type="name" class="name form__name" >
+                    </div>
+                    <div class="form__name">
+                        <div class="label">
+                            <label for="name " class="label__name">Почта:</label>
+                            <input type="name" class="name" >
+                        </div>
+                        <div class="label">
+                            <label for="email" class="label__name">Номер:</label>
+                        <input type="email" class="name" >
+                        </div>
+                    </div>
+                    <div class="label">
+                        <p class="label__name">Уточните вопрос:</p>
+                        <textarea class="about" ></textarea>
+                    </div>
+                    <!-- <input type="text" class="about" placeholder="Расскажите о себе"> -->
+                    <input type="button" value="Отправить" class="form__btn">
+                </form>
+            </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="header__container container">
+            <a href="" class="logo header__logo">
+                <img src="img/logo__dark.svg" alt="logo" class="img header__logo-img">
+            </a>
+            <div class="phone footer__phone"><a href="tel:+79999999999" class="footer__number number">+7 (999) 999-99-99</a></div>
+        </div>
+    </footer>
 </body>
 </html>
