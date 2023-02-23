@@ -172,7 +172,7 @@ body{
     font-size: 45px;
 }
 .extra__button{
-
+    z-index: 9999;
     font-family: 'font'; 
     color: white;
     font-size: 26px;
@@ -191,13 +191,13 @@ body{
     display: none;
 }
 .sliders__btn{
+    z-index: 1;
     width: 100%;
-    height: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
+    top: 50%;
     left: 0;
 }
 .slider__btn{
@@ -451,4 +451,135 @@ body{
 }
 .footer__number{
     color: #00040F;
+}
+
+
+
+/* APEX-CCS-STYLE */
+.apex-info{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.apex-promo{
+    background: url(../img/apex-bg.webp) no-repeat 100%;
+    background-size: cover;
+}
+/* apex-info */
+.apex-info__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.apex-info__txt{
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 46px;
+    color:#00040F
+}
+
+.apex-info__slider{
+width: 800px;
+}
+.apex-info__slide-btn{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: -150px;
+}
+.circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.c_gray{
+    background: url(../img/first-car-btn-colours/1.png);
+}
+.c_black{
+    background: url(../img/first-car-btn-colours/2.png);
+}
+.c_yellow{
+    background: url(../img/first-car-btn-colours/3.png);
+}
+.c_red{
+    background: url(../img/first-car-btn-colours/4.png);
+}
+.c_white{
+    background: url(../img/first-car-btn-colours/5.png);
+}
+.c_blue{
+    background: url(../img/first-car-btn-colours/6.png);
+}
+.circle__active{
+    border: 2px solid #FFAC00;
+}
+/* apex-car-size */
+.apex_car-size_info{
+    background-color: #080400;
+}
+.slides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.apex_car-size_info__table{
+    max-width: 300px;
+    width: 100%;
+}
+.size__all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.size__txt{
+    font-family: 'font'; 
+    font-size: 25px;
+    color: white;
+}
+.latters{
+    font-family: 'Montserrat', sans-serif;
+    color: #080400;
+    padding: 5px 11px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+
+.apex_car-size_info__image{
+    max-width: 850px;
+    width: 100%;
+}
+/* apex--price */
+.apex-price{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url(../img/price__bg.webp) no-repeat center;
+    background-size: cover;
+}
+.apex-price__container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+
+    padding-bottom: 160px;
+}
+.apex-price__tittle{
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.apex-price__txt{
+    color: white;
+    font-size: 30px;
+    line-height: 46px;
+    max-width: 817px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* apex-form */
+
+.apex-form{
+    background: url(../img/apex-form.png) no-repeat right center;
+    background-size: 40%;
 }

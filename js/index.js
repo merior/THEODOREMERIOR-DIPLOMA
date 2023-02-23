@@ -4,10 +4,7 @@ let btnLeft = document.querySelector(".left");
 let slides = document.querySelectorAll(".slide-first");
 let i = 0;
 
-console.log(btnLeft)
-console.log(btnRight)
-console.log(slides)
- 
+
 
 btnRight.addEventListener("click", function (e) {
     e.preventDefault()
