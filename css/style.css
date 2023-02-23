@@ -64,13 +64,13 @@ body{
     padding-top: 175px;
     background: url(../img/Ford_F150_2008_00019.jpg) no-repeat 100%;
     /* background: rgb(99,115,113); */
-    /* box-shadow: inset 0px 170px 30px rgba(0, 0, 0, 0.8); */
+    box-shadow: inset 0px 100px 30px rgba(0, 0, 0, 0.5);
 
 }
 
 .promo__tittle{
     font-family: 'font'; 
-    padding-bottom: 102px;
+    padding-bottom: 215px;
     
 
     max-width: 1071px;
@@ -96,21 +96,33 @@ body{
 /* .info{ */
     /* background: url(../img/info__bg.PNG) bottom;
     background-size: cover; */
+.info{
+    padding-top: 60px;
+    background: url(../img/info-bg-2.jpg) no-repeat left bottom;
+    background-size: cover;
+    background-size: 45%;
 }
+
 .info__container{
+    margin-right: 0;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
 }
 .info__tittle{
+     font-family: 'font'; 
+
+    font-size: 50px;
+    max-width: 561px;
+    width: 100%;
     color:#00040F;
     margin-bottom: 30px;
     margin-top: 60px;
 }
 .info__txt{
     font-size: 25px;
-    width: 80%;
+    width: 60%;
     text-align: justify;
     margin-bottom: 100px;
 }
