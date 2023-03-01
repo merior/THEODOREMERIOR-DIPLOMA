@@ -13,7 +13,6 @@ body{
 	font-family: 'font'; 
 	src: url(../txt/18013.otf); 
 }
-
 .container{
     max-width: 1440px;
     width: 100%;
@@ -187,9 +186,6 @@ body{
     background: white;
 } */
 
-.not-active{
-    display: none;
-}
 .sliders__btn{
     z-index: 1;
     width: 100%;
@@ -205,6 +201,9 @@ body{
 }
 .btn__left{
     transform: rotate(180deg);
+}
+.not-active{
+    display: none;
 }
 /* stocs */
 .stocs__tittle{
@@ -709,4 +708,17 @@ padding-top: 40px;
 .apex-form{
     background: url(../img/apex-form.png) no-repeat right center;
     background-size: 40%;
+}
+
+
+
+
+/* cyberzone */
+.cyberzone_promo{
+    background: url(../img/cyberrzone-bg.jfif) no-repeat center 65%;
+    background-size: cover;
+}
+.cyberzone-price{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url(../img/price-cyber_bg.jfif) no-repeat center;
+    background-size: cover;
 }

@@ -1,4 +1,3 @@
-
 if (document.querySelector(".slide-first")) {
     let btnRight = document.querySelector(".right");
     let btnLeft = document.querySelector(".left");
