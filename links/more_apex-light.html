@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/index.js" defer></script>
+    <script src="../js/apex-slider.js" defer></script>
     <title>THEODOREMERIOR</title>
 </head>
 <body>
@@ -31,36 +32,64 @@
     <section class="apex-info">
         <div class="apex-info__container container">
             <div class="apex-info__texts">
+                <h2 class=" apex-info__tittle">THEODOREMERIOR apex light 13</h2>
                 <p class="txt apex-info__txt">
                     От самых жарких мест до самых холодных — от 45 °C до -50 °C - наши аккумуляторные системы были созданы специально для исследования, рассчитанные на дальность действия от 418 до 643 киллометров в зависимости от выбранного вами аккумуляторного блока и двигателя.
                 </p>
             </div>
             <div class="apex-info__sliders">
                 <div class="apex-slide">
-                    <img src="../img/first-car/1.png" alt="" class="apex-info__slider gray">
-                    <img src="../img/first-car/2.png" class="apex-info__slider black not-active">
-                    <img src="../img/first-car/3.png" class="apex-info__slider yellow not-active">
-                    <img src="../img/first-car/4.png" class="apex-info__slider red not-active">
-                    <img src="../img/first-car/5.png" class="apex-info__slider white not-active">
-                    <img src="../img/first-car/6.png" class="apex-info__slider blue not-active">
+                    <img src="../img/first-car/1.png" id="gray" class="apex-info__slider target">
+                    <img src="../img/first-car/2.png" id="black" class="apex-info__slider">
+                    <img src="../img/first-car/3.png" id="yellow" class="apex-info__slider">
+                    <img src="../img/first-car/4.png" id="red" class="apex-info__slider">
+                    <img src="../img/first-car/5.png" id="white" class="apex-info__slider">
+                    <img src="../img/first-car/6.png" id="blue" class="apex-info__slider ">
                 </div>
                 <div class="apex-info__slide-btn">
-                    <a href="#" class="circle circle__active c_gray"></a>
-                    <a href="#" class="circle c_black"></a>
-                    <a href="#" class="circle c_yellow"></a>
-                    <a href="#" class="circle c_red"></a>
-                    <a href="#" class="circle c_white"></a>
-                    <a href="#" class="circle c_blue"></a>
+                    <a href="#gray" class="circle target c_gray"></a>
+                    <a href="#black" class="circle c_black"></a>
+                    <a href="#yellow" class="circle c_yellow"></a>
+                    <a href="#red" class="circle c_red"></a>
+                    <a href="#white" class="circle c_white"></a>
+                    <a href="#blue" class="circle c_blue"></a>
                 </div>
             </div>
         </div>
     </section>
     
+<section class="apex-about">
+    <div class="container">
+        <div class="apex-about__info">
+            <img src="../img/about-apex/1.jfif" alt="" class="apex-about__img">
+            <p class="txt apex-about__txt">Конструкции, изготовленные из алюминиевого сплава, сверхвысокопрочной стали и углеродного волокна, предназначены для повышения безопасности. Низкий центр тяжести нашей платформы помогает предотвратить опрокидывание и обеспечивает уверенную посадку. Чтобы еще больше повысить безопасность, ряд функций помощи водителю входит в стандартную комплектацию каждого автомобиля Rivian.</p>
+        </div>
+        <div class="apex-about__info">
+            <p class="txt apex-about__txt">Настройте свой Apex Light на плавную езду по городу или переведите его в режим бездорожья для прохождения трассы. С помощью нескольких режимов вы можете адаптировать технику к вашим личным предпочтениям вождения или различным дорожным условиям.</p>
+            <img src="../img/about-apex/2.jfif" alt="" class="apex-about__img">
+        </div>
+        <div class="apex-about__info">
+            <img src="../img/about-apex/3.jfif" alt="" class="apex-about__img">
+            <p class="txt apex-about__txt">Вдохновленный поездками по суше, объездами по бездорожью и долгими выходными в лесу. Apex Light разработан из высококачественных материалов, устойчивых к приключениям, которые не пропускают грязь, песок и все остальное, что вы можете в него бросить.</p>
+        </div>
+        <div class="apex-about__info">
+            <p class="txt apex-about__txt">Мы потратили годы на исследования в полевых условиях – таскали снаряжение, загружали велосипеды, борцовские гидрокостюмы, готовили на природе, спали под звездами. В конце концов, этот опыт привел к созданию специально построенного грузовика, оснащенного для любых приключений.</p>
+            <img src="../img/about-apex/4.jfif" alt="" class="apex-about__img">
+        </div>
+        
+    </div>
+</section>
+
 <section class="apex_car-size_info">
     <div class="container">
         <h2 class="tittle size__tittle">Размеры</h2>
-        <div class="slider">
-            <div class="slides">
+        <div class="size-slide__links">
+            <a href="#Overall" class="size-slide__link target">В целом</a>
+            <a href="#Storage" class="size-slide__link">Хранение</a>
+            <a href="#OffRoadPerformance" class="size-slide__link">Внедорожные характеристики</a>
+        </div>
+        <div class="size__slider">
+            <div class="size__slides target" id="Overall">
 
                 <div class="apex_car-size_info__images">
                     <img src="../img/drawing-slides/1.png" alt="" class="apex_car-size_info__image">
@@ -94,7 +123,101 @@
                 </div>
                 
             </div>
+            <div class="size__slides " id="Storage">
+
+                <div class="apex_car-size_info__images">
+                    <img src="../img/drawing-slides/2.png" alt="" class="apex_car-size_info__image">
+                </div>
+
+                <div class="apex_car-size_info__table">
+                    <div class="a size__all">
+                        <p class="size__txt apex__names">
+                           <span class="latters">D</span>Объем переднего багажника
+                        </p>
+                        <p class="size__txt values">
+                            314 л
+                        </p>
+                    </div>
+                    <div class="b size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters">G</span>Объем туннеля
+                        </p>
+                        <p class="size__txt values">
+                            331 л
+                        </p>
+                    </div>
+                    <div class="c size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters">F</span>Ширина кровати
+                        </p>
+                        <p class="size__txt values">
+                            1 м 20 см
+                        </p>
+                    </div>
+                    <div class="e size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters">E</span>Длина кровати с дверью
+                        </p>
+                        <p class="size__txt values">
+                            1 м 20 см
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="size__slides " id="OffRoadPerformance">
+
+                <div class="apex_car-size_info__images">
+                    <img src="../img/drawing-slides/3.png" alt="" class="apex_car-size_info__image">
+                </div>
+
+                <div class="apex_car-size_info__table">
+                    <div class="a size__all">
+                        <p class="size__txt apex__names">
+                           <span class="latters">H</span>Угол сближения
+                        </p>
+                        <p class="size__txt values">
+                            35.5º
+                        </p>
+                    </div>
+                    <div class="b size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters latters_i">I</span>Угол вылета
+                        </p>
+                        <p class="size__txt values">
+                            30º
+                        </p>
+                    </div>
+                    <div class="c size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters">J</span>Прорыв
+                        </p>
+                        <p class="size__txt values">
+                            26.4º
+                        </p>
+                    </div>
+                    <div class="e size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters">K</span>Максимальный дорожный просвет
+                        </p>
+                        <p class="size__txt values">
+                            40 см
+                        </p>
+                    </div>
+                    <div class="e size__all">
+                        <p class="size__txt apex__names">
+                            <span class="latters">L</span>Глубина перехода вброд
+                        </p>
+                        <p class="size__txt values">
+                            1 м
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
+        
     </div>
 </section>
 <section class="apex-price">
@@ -102,7 +225,7 @@
         <div class="apex-price-texts">
             <h2 class="tittle apex-price__tittle">Машина стоящая того</h2>
             <p class="txt apex-price__txt">Тропа, ведущая в никуда. Отличная горная дорога. Долгие выходные с семьей. Мы сосредоточены на создании продуктов, которые вдохновляют и позволяют вам по-новому взглянуть на мир, как в дороге, так и за ее пределами.</p>
-            <p class="txt apex-price__txt">Услышь шорох гравия под собой. Посмотрите на ночное небо над головой. Соединяйтесь с окружающим вас миром. Каждый аспект R1T разработан для того, чтобы дополнить ваши самые смелые приключения..</p>
+            <p class="txt apex-price__txt">Услышь шорох гравия под собой. Посмотрите на ночное небо над головой. Соединяйтесь с окружающим вас миром. Каждый аспект APEX Light разработан для того, чтобы дополнить ваши самые смелые приключения..</p>
         </div>
         <div class="price">
             <button class="button extra__button">5 500 000 ₽</button>

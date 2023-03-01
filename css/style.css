@@ -457,8 +457,8 @@ body{
 
 /* APEX-CCS-STYLE */
 .apex-info{
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 .apex-promo{
     background: url(../img/apex-bg.webp) no-repeat 100%;
@@ -469,29 +469,67 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: top;
+    flex-wrap: wrap;
+    
+}
+.apex-info__tittle{
+    font-family: 'font'; 
+    color:#00040F;
+    font-weight: bold;
+    font-size: 45px;
 }
 .apex-info__txt{
+
+    max-width: 533px;
+    width: 100%;
+    text-align: justify;
     margin-top: 50px;
     font-size: 30px;
     line-height: 46px;
     color:#00040F
 }
 
+.apex-info__sliders {
+    position: relative;
+}
+.apex-slide {
+    position: relative;
+    width: 800px;
+    height: 533px;
+}
 .apex-info__slider{
-width: 800px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.apex-info__slider.target {
+    visibility: visible;
+    opacity: 1;
 }
 .apex-info__slide-btn{
-    max-width: 300px;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    gap: calc(90px / 5);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: -150px;
+    bottom: 55px;
+    left: 0;
 }
 .circle{
     width: 35px;
     height: 35px;
+    cursor: pointer;
     border-radius: 50%;
+    border: 2px solid;
+    border-color: transparent;
+    transition: all 0.3s ease 0s;
 }
 .c_gray{
     background: url(../img/first-car-btn-colours/1.png);
@@ -511,9 +549,38 @@ width: 800px;
 .c_blue{
     background: url(../img/first-car-btn-colours/6.png);
 }
-.circle__active{
-    border: 2px solid #FFAC00;
+.circle.target{
+    border-color: #FFAC00;
 }
+/* apex-about */
+.apex-about{
+    padding-bottom: 30px;
+}
+.apex-about__info{
+    flex-wrap: wrap;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #00040F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.apex-about__img{
+    border-radius: 230px;
+    max-width: 600px;
+    width: 100%;
+}
+.apex-about__txt{
+    max-width: 738px;
+    width: 100%;
+
+    font-size: 25px;
+    line-height: 40px;
+    color: #00040F;
+    text-align: justify;
+}
+
 /* apex-car-size */
 
 .size__tittle{
@@ -521,11 +588,27 @@ padding-top: 40px;
 }
 .apex_car-size_info{
     background-color: #080400;
+    padding-bottom: 500px;
 }
-.slides{
+.size_slider{
+    max-height: 400px;
+}
+.size__slides{
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.size__slides.target{
+        visibility: visible;
+        opacity: 1;
+    
 }
 .apex_car-size_info__table{
     max-width: 550px;
@@ -535,7 +618,7 @@ padding-top: 40px;
 .size__all{
     display: flex;
     justify-content: space-between;
-    align-items:
+    align-items: center;
 }
 .size__txt{
     font-family: 'font'; 
@@ -550,10 +633,13 @@ padding-top: 40px;
     border-radius: 50%;
     margin-right: 15px;
 }
+.latters_i{
+    padding: 5px 15px;
+}
 
 
 .apex_car-size_info__image{
-    max-width: 850px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -562,6 +648,35 @@ padding-top: 40px;
     margin-bottom: 30px;
 }
 
+.e{
+    margin-top: 30px;
+}
+
+
+.size__slides {
+    flex-wrap: wrap;
+}
+.size-slide__links{
+    padding-top: 25px;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.size-slide__link{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: 60%;
+    transition: 1s;
+}
+.size-slide__link:hover{
+    opacity: 100%;
+}
+.size-slide__link.target{
+    opacity: 100%;
+    border-bottom: 2px solid #FFFFFF;
+}
 /* apex--price */
 .apex-price{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url(../img/price__bg.webp) no-repeat center;
