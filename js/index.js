@@ -67,3 +67,10 @@ if (document.querySelector(".apex_car-size_info")) {
         }
     })
 }
+
+// if (document.querySelector(".test_drive__link")){
+//     document.querySelectorAll(".test_drive__link").forEach.addEventListener("click", (e) => {
+//         e.preventDefault();
+//         console.log('a')
+//     })
+// }

@@ -248,12 +248,6 @@ body{
     width: 602px;
     height: 947px;
 }
-/* .stocs__autopilot{
-    margin-top: 45px;
-    background: url(../img/stocs/4.png);
-    width: 514px;
-    height: 451px;
-} */
 
 .stocs__txt{
     margin-top: 378px;
@@ -295,44 +289,6 @@ body{
 .stocs__card:hover .stocs__txt-inside{
     color: white
 }
-/* article */
-.article__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.article__tittle{
-    color: #00040F;
-    margin-bottom: 60px;
-}
-.article__txt{
-    font-size: 25px;
-    width: 80%;
-    text-align: justify;
-
-    margin-bottom: 40px;
-}
-.article__img{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.info__second-button{
-    font-family: 'font'; 
-    margin-top: 30px;
-    font-size: 30px;
-    line-height: 30px;
-    color: #000000;
-
-    padding: 11px 28px;
-
-    background: transparent;
-    border: 1px solid #00040F;
-    border-radius: 183px;
-}
-
 
 /* map */
 
@@ -383,7 +339,7 @@ body{
     flex-direction: column;
     
 }
-.form__name{
+.form__names{
     display: flex;
     justify-content: space-between;
 }
@@ -410,6 +366,7 @@ body{
     margin-bottom: 10px;
 }
 .about{
+    
     width: 652px;
     height: 100px;
     border: 1px solid #00040F;
@@ -725,4 +682,214 @@ padding-top: 40px;
 .cyber-form{
     background: url(../img/cyber-form.png) no-repeat right center;
     background-size: 40%;
+}
+
+/* popup */
+.popup{
+    width: 100%;
+    min-height:100%;
+    position:fixed;
+    top:0px;
+    background-color: rgba(0,0,0,0.5);
+}
+.popup-content{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -305px;
+    margin-left: -365px;
+
+    max-width: 695px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 45px;
+    background-color: white;
+    border: 1px solid #00040F;
+}
+.popup__tittle{
+    font-size: 40px;
+    margin-right: 130px;
+    margin-bottom: 10px;
+}
+.popup_select{
+    width: 320px;
+    height: 65px;
+    border: 1px solid #00040F;
+}
+
+.popup__btn{
+    width: 30%;
+
+    margin-top: 30px;
+    line-height: 30px;
+    color: #000000;
+
+    background: transparent;
+    border: 1px solid #00040F;
+    border-radius: 183px;
+
+    font-family: 'font'; 
+    font-size: 26px;
+    
+    padding: 15px 30px;
+    border-radius: 183px;
+    margin-bottom: 30px;
+}
+
+
+.cl-btn-7 {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.cl-btn-7:before {
+    content: '+';
+    color: #00040F;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.cl-btn-7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #00040F;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.cl-btn-7:hover:after {
+    transform: scale(1);
+}
+.cl-btn-7:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
+.df{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* адаптация */
+@media (max-width: 1440px) {
+    .container{
+        width: 90%;
+    }
+    .info__container{
+        width: 50%;
+    }
+    .form__div{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1236px) {
+    .map__img{
+        max-width: 1000px;
+        width: 100%;
+    }
+    .form{
+        background-size:48%;
+    }
+}
+@media (max-width: 1236px) {
+    .form{
+        background: white;
+    }
+    .form__div{
+        width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    .header__logo{
+        margin:auto;
+    }
+    .header__logo-img{
+        width: 50px;
+        height: 50px;
+    }
+    .phone{
+        display: none;
+    }
+    .promo{
+        background: url(../img/Ford_F150_2008_00019.jpg) no-repeat 55% 50%;
+    }
+    .promo__tittle{
+        max-width: 300px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .stocs__half-price{
+        max-width: 350px;
+        width: 100%;
+    }
+    .stocs__interior{
+        max-width: 350px;
+        width: 100%;
+    }
+    .map__tittle{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .map__txt{
+        font-size: 6px;
+    }
+
+
+    .container{
+        width: 70%;
+    }
+    .info{
+        padding-top: 0;
+        background: #FFFFFF;
+    }
+    .info__container{
+
+        margin:auto;
+        width: 100%;
+    }
+    .info__tittle{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .info__txt{
+        font-size:10px
+    }
+    .form__div{
+        width: 100%;
+    }
+    .form__tittle{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .name{
+        width: 170px;
+        height: 50px;
+    }
+    .form__name{
+        width: 360px;
+        height: 50px;
+    }
+    .about{
+        width: 360px;
+        height: 50px;
+    }
+    .form__btn{
+        width: 100%;
+    }
 }

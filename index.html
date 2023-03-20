@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" defer></script>
+    <script src="js/modal.js" defer></script>
     <title>THEODOREMERIOR</title>
 </head>
 <body>
@@ -43,7 +44,9 @@
                         <a href="links/more_cyberzone.html" class="link link__extra__button">
                             <button class="button extra__button">УЗНАТЬ БОЛЬШЕ</button>
                         </a>
-                        <button class="button extra__button">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+                        <a href="#" class="link test_drive__link">
+                            <button class="button extra__button  test_drive__link-second">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -55,7 +58,9 @@
                         <a href="links/more_apex-light.html" class="link link__extra__button">
                             <button class="button extra__button">УЗНАТЬ БОЛЬШЕ</button>
                         </a>
-                        <button class="button extra__button">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+                        <a href="#" class="link test_drive__link">
+                            <button class="button extra__button test_drive__link-first">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -86,18 +91,6 @@
                     <p class="stocs__txt-inside">Вместе с инженерами есть возможность полностью изменить интерьер автомобиля под вас, ваш рост или может какую-нибудь особенность, даже можем сделать праворульную машину если Вам так удобней.</p>
                 </div>
             </div>
-            <!-- <div class="stocs__card stocs__autopilot">
-                <p class="txt stocs__txt">Новинка: Автопилот</p>
-            </div> -->
-        </div>
-    </section>
-    <section class="article">
-        <div class="article__container container">
-            <h2 class="tittle article__tittle">ДЛЯ РОССИЙСКОЙ ЗИМЫ!</h2>
-            <p class="txt article__txt">Наши автомобили были спроектированы таким образом, чтобы свести к минимуму любое влияние экстремальных низких температур на производительность или дальность полета. Если сесть в автомобиль после длительного пребывания в холоде при температуре - 40℃, автомобиль будет работать нормально, но потребуется около 20 минут, чтобы аккумулятор прогрелся и смог обеспечить полную мощность и производительность аккумулятора. Прогноз дальности движения автомобиля, отображаемый водителю, учитывает температуру, условия вождения и обогрев салона, чтобы обеспечить точное отображение дальности движения автомобиля с учетом оставшейся энергии аккумулятора.</p>
-            <p class="txt article__txt">Вы можете узнать как мы проверяли это в нашей новой статье!</p>
-            <button class="info__second-button">Посмотреть как это было</button>
-            <img src="img/article__bg.jpg" alt="car" class="img article__img">
         </div>
     </section>
     <section class="map">
@@ -118,7 +111,7 @@
                         <label for="name" class="label__name">Имя:</label>
                         <input type="name" class="name form__name" >
                     </div>
-                    <div class="form__name">
+                    <div class="form__names">
                         <div class="label">
                             <label for="name " class="label__name">Почта:</label>
                             <input type="name" class="name" >
@@ -146,9 +139,36 @@
             <div class="phone footer__phone"><a href="tel:+79999999999" class="footer__number number">+7 (999) 999-99-99</a></div>
         </div>
     </footer>
-    <div class="popup">
-        <div class="popup-content">
+    <div class="popup not-active">
+        <div class="popup-content not-active">
+            <div class="popup__div">
+                <div class="df">
+                    <h2 class="form__tittle popup__tittle">Записаться на тест-драйв:</h2>
+                    <div class="cl-btn-7"></div>
+                </div>
+                <form action="#" class="popup__form">
+                    <div class="label">
+                        <label for="name" class="label__name">Имя:</label>
+                        <input type="name" class="name form__name" >
+                    </div>
+                    <div class="form__name">
+                        <div class="label">
+                            <label for="number" class="label__name">Номер:</label>
+                        <input type="number" class="name" >
+                        </div>
+                        <div class="label">
+                            <label for="select" class="label__name">Машина:</label>
+                            <select class ="popup_select" id="select">
+                                <option class ="popup_option">THEODOREMERIOR cyberzone 0</option>
+                                <option class ="popup_option">THEODOREMERIOR apex light 13</option>
+                              </select>
+                        </div>
 
+                    </div>
+                    <!-- <input type="text" class="about" placeholder="Расскажите о себе"> -->
+                    <input type="button" value="Отправить" class="popup__btn">
+                </form>
+            </div>
         </div>
     </div>
 </body>
