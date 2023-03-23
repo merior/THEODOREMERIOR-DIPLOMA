@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" defer></script>
     <script src="js/modal.js" defer></script>
+    <script src="js/media.js" defer></script>
     <title>THEODOREMERIOR</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
                 <h2 class="tittle extra__tittle">КАТАЛОГ</h2>
                 <div class="name-and-buttons">
                     <p class="extra__name">THEODOREMERIOR cyberzone 0</p>
-                    <div class="buttons">
+                    <div class="buttons " id="buttons_inside">
                         <a href="links/more_cyberzone.html" class="link link__extra__button">
                             <button class="button extra__button">УЗНАТЬ БОЛЬШЕ</button>
                         </a>
@@ -54,7 +55,7 @@
                 <h2 class="tittle extra__tittle">КАТАЛОГ</h2>
                 <div class="name-and-buttons">
                     <p class="extra__name">THEODOREMERIOR apex light 13</p>
-                    <div class="buttons">
+                    <div class="buttons" id="buttons_inside">
                         <a href="links/more_apex-light.html" class="link link__extra__button">
                             <button class="button extra__button">УЗНАТЬ БОЛЬШЕ</button>
                         </a>
@@ -64,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sliders__btn">
+            <div class="sliders__btn" >
                 <a href="#" class="left">
                     <img src="img/arrow-right.svg" alt="" class=" slider__btn btn__left">
                 </a>
@@ -74,6 +75,18 @@
             </div>
         </div>
     </section>
+
+    <div class="buttons_div container not-active" id="buttons_outside">
+        <div class="buttons">
+            <a href="links/more_apex-light.html" class="link link__extra__button ">
+                <button class="button extra__button ">УЗНАТЬ БОЛЬШЕ</button>
+            </a>
+            <a href="#" class="link test_drive__link">
+                <button class="button extra__button test_drive__link-first">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+            </a>
+        </div>
+    </div>
+    
     <section class="stocs">
         <h2 class="tittle  stocs__tittle">АКЦИИ И ПРЕДЛОЖЕНИЯ</h2>
         <div class="stocs__container container">

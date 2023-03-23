@@ -814,7 +814,7 @@ padding-top: 40px;
         width: 100%;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 414px) {
     .header__logo{
         margin:auto;
     }
@@ -833,15 +833,97 @@ padding-top: 40px;
         font-size: 25px;
         line-height: 30px;
     }
-
+    .extra__tittle{
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 155px;
+    }
+    .extra__name{
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 50px;
+    }
+    .name-and-buttons{
+        padding: 0;
+    }
+    .extra__button{
+        font-size: 10px;
+        padding: 9px 18px;
+        color:#00040F;
+        border: 1px solid #00040F;
+    }
+    .slider__btn{
+        width: 30px;
+    }
+    .buttons_div{
+        margin-top: 10px;
+    }
+    .stocs__card{
+        margin-bottom: 10px;
+    }
+    .stocs__tittle{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 66px;
+        margin-bottom: 35px;
+    }
     .stocs__half-price{
-        max-width: 350px;
-        width: 100%;
+        width: 289px;
+        height: 214px;
     }
     .stocs__interior{
-        max-width: 350px;
-        width: 100%;
+        width: 289px;
+        height: 214px;
     }
+    .stocs__guarantee{
+        width: 350px;
+        height: 214px;
+    }
+    .stocs__txt{
+        margin-top: 168px;
+        margin-left: 15px;
+    
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 46px;
+        color: #FFFFFF;
+    
+        transition: 1s;
+    }
+    .stocs__tittle{
+        margin-bottom: 60px;
+        color: #00040F;
+    }
+    .stocs__txt-big{
+        margin-top: 168px;
+    }
+    
+    .stocs__txt-inside{
+        color: transparent;
+        font-size: 14px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .stocs__card:hover .stocs__txt{
+        margin-top: 7px;
+    }
+    
+    .stocs__card:hover{
+        box-shadow: inset 0px -493px 30px rgba(0, 0, 0, 0.8);
+    }
+    
+    .stocs__card:hover .stocs__txt-big{
+        margin-top: 7px;
+    }
+    .stocs__card:hover .stocs__txt-inside{
+        color: white;
+        margin-top: 0;
+    }
+
+
+
     .map__tittle{
         font-size: 25px;
         line-height: 30px;
@@ -859,16 +941,19 @@ padding-top: 40px;
         background: #FFFFFF;
     }
     .info__container{
-
+        align-items: center;
         margin:auto;
         width: 100%;
     }
     .info__tittle{
+        max-width: 287px;
+        text-align: center;
         font-size: 25px;
         line-height: 30px;
     }
     .info__txt{
-        font-size:10px
+        font-size:10px;
+        margin-bottom: 60px;
     }
     .form__div{
         width: 100%;
@@ -892,4 +977,6 @@ padding-top: 40px;
     .form__btn{
         width: 100%;
     }
+
+    
 }
