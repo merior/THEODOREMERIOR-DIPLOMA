@@ -829,7 +829,7 @@ padding-top: 40px;
         background: url(../img/Ford_F150_2008_00019.jpg) no-repeat 55% 50%;
     }
     .promo__tittle{
-        max-width: 300px;
+        max-width: 312px;
         font-size: 25px;
         line-height: 30px;
     }
@@ -840,10 +840,10 @@ padding-top: 40px;
         margin-bottom: 155px;
     }
     .extra__name{
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         font-size: 20px;
         line-height: 30px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .name-and-buttons{
         padding: 0;
@@ -851,14 +851,16 @@ padding-top: 40px;
     .extra__button{
         font-size: 10px;
         padding: 9px 18px;
-        color:#00040F;
-        border: 1px solid #00040F;
+        margin-bottom: 10px;
     }
     .slider__btn{
         width: 30px;
     }
     .buttons_div{
         margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .stocs__card{
         margin-bottom: 10px;
@@ -870,11 +872,11 @@ padding-top: 40px;
         margin-bottom: 35px;
     }
     .stocs__half-price{
-        width: 289px;
+        width: 331px;
         height: 214px;
     }
     .stocs__interior{
-        width: 289px;
+        width: 331px;
         height: 214px;
     }
     .stocs__guarantee{
@@ -934,7 +936,7 @@ padding-top: 40px;
 
 
     .container{
-        width: 70%;
+        width: 80%;
     }
     .info{
         padding-top: 0;
@@ -952,7 +954,7 @@ padding-top: 40px;
         line-height: 30px;
     }
     .info__txt{
-        font-size:10px;
+        font-size:15px;
         margin-bottom: 60px;
     }
     .form__div{
@@ -977,6 +979,88 @@ padding-top: 40px;
     .form__btn{
         width: 100%;
     }
+    
 
     
+
+    .apex-promo{
+    background: url(../img/apex-bg.webp) no-repeat center left;
+    background-size: cover;
+}
+.apex-info__tittle {
+    font-size: 25px;
+}
+.apex-info__txt{
+    font-size: 15px;
+    line-height: 30px;
+}
+.apex-slide {
+    position: relative;
+    width: 357px;
+    height: 278px;
+}
+.apex-info__slide-btn{
+    bottom: 45px;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+}
+.apex_car-size_info__image {
+    max-width: 365px;
+    width: 100%;
+}
+.size__txt {
+    font-size: 15px;
+}
+.apex_car-size_info__table {
+    max-width: 320px;
+    width: 100%;
+}
+.size-slide__link{
+    font-size: 11px;
+}
+.size__slides {
+    width: 340px;
+}
+.size__tittle{
+    font-size: 25px;
+    line-height: 30px;
+}
+.apex-price__tittle{
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 0;
+}
+.apex-price__txt{
+    font-size: 15px;
+    line-height: 30px;
+}
+.apex-price__container{
+    display: block;
+    padding-bottom: 0;
+    padding-top: 40px;
+}
+.price_btn{
+    border: 2px solid #FFFFFF;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.apex-about__txt{
+    font-size: 15px;
+    line-height: 30px;
+}
+.apex-about__img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.apex-about__info {
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+.cyberzone_promo{
+    background: url(../img/cyberrzone-bg.jfif) no-repeat center 65%;
+    background-size: cover;
+}
 }
