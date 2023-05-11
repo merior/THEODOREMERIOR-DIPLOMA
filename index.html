@@ -21,7 +21,12 @@
             <a href="" class="logo header__logo">
                 <img src="img/logo.svg" alt="logo" class="img header__logo-img">
             </a>
-            <div class=phone><a href="tel:+79999999999" class="number">+7 (999) 999-99-99</a></div>
+            <nav class="nav-bar">
+                <a href="links/about.html" class="nav-item link">О компании</a>
+                <a href="links/more_cyberzone.html" class="nav-item link">Cyberzone 0</a>
+                <a href="links/more_apex-light.html" class="nav-item link">Apex Light 13</a>
+            </nav>
+            <a class=phone><div href="tel:+79999999999" class="number link">+7 (999) 999-99-99</div></a>
         </div>
     </header>
     <section class="promo">
@@ -43,10 +48,10 @@
                     <p class="extra__name">THEODOREMERIOR cyberzone 0</p>
                     <div class="buttons " id="buttons_inside">
                         <a href="links/more_cyberzone.html" class="link link__extra__button">
-                            <button class="button extra__button">УЗНАТЬ БОЛЬШЕ</button>
+                            <div class="button extra__button">УЗНАТЬ БОЛЬШЕ</div>
                         </a>
                         <a href="#" class="link test_drive__link">
-                            <button class="button extra__button  test_drive__link-second">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+                            <div class="button extra__button  test_drive__link-second">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</div>
                         </a>
                     </div>
                 </div>
@@ -57,10 +62,10 @@
                     <p class="extra__name">THEODOREMERIOR apex light 13</p>
                     <div class="buttons" id="buttons_inside">
                         <a href="links/more_apex-light.html" class="link link__extra__button">
-                            <button class="button extra__button">УЗНАТЬ БОЛЬШЕ</button>
+                            <div class="button extra__button">УЗНАТЬ БОЛЬШЕ</div>
                         </a>
                         <a href="#" class="link test_drive__link">
-                            <button class="button extra__button test_drive__link-first">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</button>
+                            <div class="button extra__button test_drive__link-first">ЗАПИСАТЬСЯ НА ТЕСТ-ДРАЙВ</div>
                         </a>
                     </div>
                 </div>
@@ -149,7 +154,7 @@
             <a href="" class="logo header__logo">
                 <img src="img/logo__dark.svg" alt="logo" class="img header__logo-img">
             </a>
-            <div class="phone footer__phone"><a href="tel:+79999999999" class="footer__number number">+7 (999) 999-99-99</a></div>
+            <div class="phone footer__phone"><a href="tel:+79999999999" class="footer__number number link">+7 (999) 999-99-99</a></div>
         </div>
     </footer>
     <div class="popup not-active">
@@ -160,16 +165,16 @@
                     <div class="cl-btn-7"></div>
                 </div>
                 <form action="#" class="popup__form">
-                    <div class="label">
+                    <div class="popup__label">
                         <label for="name" class="label__name">Имя:</label>
-                        <input type="name" class="name form__name" >
+                        <input type="name" class="name form__name popup-form__name" >
                     </div>
-                    <div class="form__name">
-                        <div class="label">
+                    <div class="popup__name">
+                        <div class="popup__label">
                             <label for="number" class="label__name">Номер:</label>
                         <input type="number" class="name" >
                         </div>
-                        <div class="label">
+                        <div class="popup__label">
                             <label for="select" class="label__name">Машина:</label>
                             <select class ="popup_select" id="select">
                                 <option class ="popup_option">THEODOREMERIOR cyberzone 0</option>
